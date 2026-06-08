@@ -26,7 +26,11 @@ target/
 *.ipr
 
 ### VS CODE ###
-.vscode
+.vscode/
+*.code-workspace
+.history/
+.ionide/
+.vscode-test/
 
 ### JRebel ###
 rebel.xml
