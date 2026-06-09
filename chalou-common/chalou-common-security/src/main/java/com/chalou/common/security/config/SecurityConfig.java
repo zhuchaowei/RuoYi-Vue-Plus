@@ -13,6 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import com.chalou.common.core.constant.HttpStatus;
+import com.chalou.common.core.enums.UserType;
 import com.chalou.common.core.utils.ServletUtils;
 import com.chalou.common.core.utils.SpringUtils;
 import com.chalou.common.core.utils.StringUtils;
@@ -73,6 +74,8 @@ public class SecurityConfig implements WebMvcConfigurer {
                                 StpUtil.getTokenValue());
                         }
 
+                        checkUserType(request);
+
                         // 有效率影响 用于临时测试
                         // if (log.isDebugEnabled()) {
                         //     log.info("剩余有效时间: {}", StpUtil.getTokenTimeout());
@@ -103,6 +106,25 @@ public class SecurityConfig implements WebMvcConfigurer {
                 response.setContentType(SaTokenConsts.CONTENT_TYPE_APPLICATION_JSON);
                 return SaResult.error(e.getMessage()).setCode(HttpStatus.UNAUTHORIZED);
             });
+    }
+
+    /**
+     * 区分后台管理端与app端token，避免不同用户体系串用token。
+     */
+    private void checkUserType(HttpServletRequest request) {
+        UserType userType = LoginHelper.getUserType();
+        String path = request.getServletPath();
+        boolean appRequest = StringUtils.isMatch(securityProperties.getAppPath(), path);
+        if (appRequest && userType != UserType.APP_USER) {
+            throw NotLoginException.newInstance(StpUtil.getLoginType(),
+                "-101", "非app端Token不能访问app端接口",
+                StpUtil.getTokenValue());
+        }
+        if (!appRequest && userType == UserType.APP_USER) {
+            throw NotLoginException.newInstance(StpUtil.getLoginType(),
+                "-102", "app端Token不能访问后台管理端接口",
+                StpUtil.getTokenValue());
+        }
     }
 
 }

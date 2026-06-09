@@ -387,6 +387,12 @@
 
             <dependency>
                 <groupId>com.chalou</groupId>
+                <artifactId>chalou-app</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chalou</groupId>
                 <artifactId>chalou-job</artifactId>
                 <version>${revision}</version>
             </dependency>

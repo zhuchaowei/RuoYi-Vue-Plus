@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
+        <module>chalou-app</module>
         <module>chalou-demo</module>
         <module>chalou-generator</module>
         <module>chalou-job</module>

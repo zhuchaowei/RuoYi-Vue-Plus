@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.chalou</groupId>
+        <artifactId>chalou-modules</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chalou-app</artifactId>
+
+    <description>
+        app端接口模块
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-satoken</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-tenant</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-translation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-system</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

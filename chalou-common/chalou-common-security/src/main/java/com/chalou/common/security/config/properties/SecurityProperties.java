@@ -17,5 +17,9 @@ public class SecurityProperties {
      */
     private String[] excludes;
 
+    /**
+     * app端接口路径
+     */
+    private String appPath = "/app/**";
 
 }

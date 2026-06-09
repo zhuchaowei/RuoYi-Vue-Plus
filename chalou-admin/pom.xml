@@ -70,6 +70,12 @@
             <artifactId>chalou-system</artifactId>
         </dependency>
 
+        <!-- app端接口模块 -->
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-app</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.chalou</groupId>
             <artifactId>chalou-job</artifactId>

@@ -105,6 +105,8 @@ sa-token:
 
 # security配置
 security:
+  # app端接口路径，该路径下只允许 app_user token 访问
+  appPath: /app/**
   # 排除路径
   excludes:
     - /*.html
