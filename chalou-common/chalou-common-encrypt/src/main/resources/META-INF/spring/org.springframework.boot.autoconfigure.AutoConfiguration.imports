@@ -1,0 +1,3 @@
+com.chalou.common.encrypt.config.EncryptorAutoConfiguration
+com.chalou.common.encrypt.config.ApiDecryptAutoConfiguration
+

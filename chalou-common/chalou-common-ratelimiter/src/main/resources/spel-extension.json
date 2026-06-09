@@ -1,0 +1,7 @@
+{
+  "com.chalou.common.ratelimiter.annotation.RateLimiter@key": {
+    "method": {
+      "parameters": true
+    }
+  }
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.chalou</groupId>
+        <artifactId>chalou-modules</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chalou-system</artifactId>
+
+    <description>
+        system系统模块
+    </description>
+
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-doc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-translation</artifactId>
+        </dependency>
+
+        <!-- OSS功能模块 -->
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-oss</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-log</artifactId>
+        </dependency>
+
+        <!-- excel-->
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-excel</artifactId>
+        </dependency>
+
+        <!-- SMS功能模块 -->
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-sms</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-tenant</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-idempotent</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-sensitive</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-encrypt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-websocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chalou</groupId>
+            <artifactId>chalou-common-sse</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

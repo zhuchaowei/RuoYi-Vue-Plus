@@ -1,0 +1,6 @@
+com.chalou.common.translation.config.TranslationConfig
+com.chalou.common.translation.core.impl.DeptNameTranslationImpl
+com.chalou.common.translation.core.impl.DictTypeTranslationImpl
+com.chalou.common.translation.core.impl.OssUrlTranslationImpl
+com.chalou.common.translation.core.impl.UserNameTranslationImpl
+com.chalou.common.translation.core.impl.NicknameTranslationImpl

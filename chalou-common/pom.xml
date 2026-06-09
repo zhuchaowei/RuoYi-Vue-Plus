@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>chalou-vue-plus</artifactId>
+        <groupId>com.chalou</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>chalou-common-bom</module>
+        <module>chalou-common-social</module>
+        <module>chalou-common-core</module>
+        <module>chalou-common-doc</module>
+        <module>chalou-common-excel</module>
+        <module>chalou-common-idempotent</module>
+        <module>chalou-common-job</module>
+        <module>chalou-common-log</module>
+        <module>chalou-common-mail</module>
+        <module>chalou-common-mybatis</module>
+        <module>chalou-common-oss</module>
+        <module>chalou-common-ratelimiter</module>
+        <module>chalou-common-redis</module>
+        <module>chalou-common-satoken</module>
+        <module>chalou-common-security</module>
+        <module>chalou-common-sms</module>
+        <module>chalou-common-web</module>
+        <module>chalou-common-translation</module>
+        <module>chalou-common-sensitive</module>
+        <module>chalou-common-json</module>
+        <module>chalou-common-encrypt</module>
+        <module>chalou-common-tenant</module>
+        <module>chalou-common-websocket</module>
+        <module>chalou-common-sse</module>
+    </modules>
+
+    <artifactId>chalou-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        common 通用模块
+    </description>
+
+</project>

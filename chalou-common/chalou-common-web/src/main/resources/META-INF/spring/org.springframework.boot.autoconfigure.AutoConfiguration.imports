@@ -1,0 +1,5 @@
+com.chalou.common.web.config.CaptchaConfig
+com.chalou.common.web.config.FilterConfig
+com.chalou.common.web.config.I18nConfig
+com.chalou.common.web.config.ResourcesConfig
+com.chalou.common.web.config.UndertowConfig
